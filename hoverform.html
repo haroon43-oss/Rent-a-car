@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+
+    <button class="btn" onclick="openForm()"></button>
+    <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+            <div class="modal-header">
+                <button type="button" onclick="closeForm()" class="close"><span>&times;</span></button>
+                <h4 class="modal-title">Book Now</h4>
+            </div>
+
+            <div class="row">
+                <input type="text" placeholder="Pick-up location" required>
+                <input type="text" placeholder="Return location" required>
+            </div>
+
+            <div class="row">
+                <input type="text" placeholder="Pick-up date/time" required>
+                <input type="text" placeholder="Return date/time" required>
+            </div>
+
+            <input type="text" placeholder="Enter full name" required>
+
+            <div class="row">
+                <input type="text" placeholder="Enter email address" required>
+                <input type="number" placeholder="Enter Phone No." name="psw" required>
+            </div>
+            <hr>
+            <button type="submit" class="btn">Book Now</button>
+        </form>
+    </div>
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

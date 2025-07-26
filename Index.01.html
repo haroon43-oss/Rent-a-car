@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="Index-style.css">
+    <script src="https://kit.fontawesome.com/4b50114454.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR-CARS | HOME</title>
+</head>
+
+<body>
+    <div class="container-01">
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+                <div class="nav-title">
+                    <a href="index.html"><img src="Logo.png" height="50" width="70"></a>
+                </div>
+            </div>
+            <div class="nav-btn">
+                <label for="nav-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+            </div>
+
+            <div class="nav-links">
+                <a href="index.html">
+                    <button class="btn"><i class="fas fa-home"></i><b>Home</b></button></a>
+
+
+                <a href="services.html"><button class="btn"><i class="fab fa-servicestack"></i><b>Services</b></button></a>
+
+
+                <a href="tours.html"><button class="btn"><i class="fa fa-car"></i><b>Tours</b></button></a>
+
+                <a href="fleet.html">
+                    <button class="btn"><i class="fab fa-servicestack"></i><b>Fleet</b></button></a>
+                </a>
+                <a href="about us.html"><button class="btn"><i class="fa fa-info"></i><b>About Us</b></button></a>
+
+
+                <a href="gallery.html">
+                    <button class="btn"><i class="fas fa-images"></i><b>Gallery</b></button>
+                </a>
+
+                <a href="contact.html"><button class="btn"><i class="far fa-address-card"></i><b>Contact Us</b></button></a>
+            </div>
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+
+                    <img src="images/slider-image-1.jpg" style="width:100%">
+
+                </div>
+
+                <div class="mySlides fade">
+
+                    <img src="images/slider-image-2.jpg" style="width:100%">
+
+                </div>
+
+                <div class="mySlides fade">
+
+                    <img src="images/slider-image-3.jpg" style="width:100%">
+
+                </div>
+            </div>
+            <br>
+
+            <script>
+                var slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    var i;
+                    var slides = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {
+                        slideIndex = 1
+                    }
+
+                    slides[slideIndex - 1].style.display = "block";
+
+                    setTimeout(showSlides, 2000); // Change image every 4 seconds
+                }
+            </script>
+        </div>
+
+</body>
+
+</html>

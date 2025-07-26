@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="Logo.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HR-CARS | HOME</title>
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body style="max-width: 1920px;min-width: 480px;width: 100%;">
+    <header>
+
+        <a href="index.html" class="logo">LOGO</a>
+        <ul class="borderXwidth">
+            <li>
+                <a href="index.html" class="active1" onclick="toggle()">
+                    <b>Home</b></a>
+            </li>
+
+            <li>
+                <a href="services.html" onclick="toggle()">
+                    <b>Services</b>
+                </a>
+            </li>
+            <li>
+                <a href="tours.html" onclick="toggle()"><b>Tours</b></a>
+            </li>
+            <li>
+                <a href="fleet.html" onclick="toggle()">
+                    <b>Fleet</b>
+                </a>
+            </li>
+            <li><a href="about us.html" onclick="toggle()"><b>About Us</b></a>
+            <li>
+                <a href="gallery.html" onclick="toggle()">
+                    <b>Gallery</b>
+                </a>
+            </li>
+            <li>
+                <a href="contact.html" onclick="toggle()"><b>Contact Us</b></a>
+            </li>
+        </ul>
+
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+    <div class="space"></div>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+
+            <img src="images/slider-image-1.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="images/slider-image-2.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="images/slider-image-3.jpg" style="width:100%">
+
+        </div>
+    </div>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+
+            setTimeout(showSlides, 2000); // Change image every 4 seconds
+        }
+    </script>
+
+
+    <section class="abc-info">
+        <h2>Cars Available On Rent</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <button>HR Car Rental</button>
+                <img src="cars/audi A6.png" alt="">
+                <div class="text-align">Audi A-6</div>
+            </div>
+            <div class="shop-item">
+                <button>HR Car Rental</button>
+                <img src="cars/Mercedes c-180.png" alt="">
+                <div class="text-align">Mercedes Benz C-180</div>
+            </div>
+            <div class="shop-item">
+                <button>HR Car Rental</button>
+                <img src="cars/suv_s.png" alt="">
+                <div class="text-align">SUV'S</div>
+            </div>
+            <div class="shop-item">
+                <button>HR Car Rental</button>
+                <img src="cars/Hyundai.png" alt="">
+                <div class="text-align">Hyundai</div>
+            </div>
+            <div class="shop-item">
+                <button>HR Car Rental</button>
+                <img src="cars/Toyota Corolla.png" alt="">
+                <div class="text-align">Toyota Corolla</div>
+            </div>
+            <div class="shop-item">
+                <button>HR Car Rental</button>
+                <img src="cars/civic.png" alt="">
+                <div class="text-align">Honda Civic</div>
+            </div>
+            <div class="shop-item">
+                <button>HR Car Rental</button>
+                <img src="cars/mercedes E250.png" alt="">
+                <div class="text-align">Mercees E250</div>
+            </div>
+            <div class="shop-item">
+                <button>HR Car Rental</button>
+                <img src="cars/Fortuner.png" alt="">
+                <div class="text-align">Fortuner</div>
+            </div>
+        </div>
+
+        <h2>Our Services</h2>
+        <div class="services">
+            <div>
+                <h3>24/7 Services:</h3>
+                <p>We are available 24/7 to let you rent a car at any time.You can book a car online at any
+                    time.
+                </p>
+            </div>
+
+            <div>
+                <h3>Online booking:</h3>
+                <p>To get the most out of your holiday time in Pakistan, we will advise you to pre-book
+                    24-hours in advance to get a punctual service.</p>
+            </div>
+            <div>
+                <div>
+                    <h3>Online Quote:</h3>
+                    <p>Just fill up the form onlone to get a quote of any vehicle for the required number of
+                        days.
+                    </p>
+                </div>
+            </div>
+        </div>
+        </center>
+        <center>
+        <div class="C-namee">What Our Client Say</div>
+            <div class="clientBx">
+                <div>
+                    <span>
+                        <img src="images/profile.jpg" width="120px" height="90px" alt="Picture">
+                        <br><span class="txt-001">Saqib Ali</span><br><br>
+                        <span class="txtx-0001">
+                            Great car exceptional service. It was my first experience with them and I got the
+                            car in
+                            a
+                            very short notice which was great. Great staff excellent service.
+                        </span>
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        <img src="images/profile.jpg" width="120px" height="90px" alt="Picture">
+                        <br><span class="txt-001">Najaf Agha</span><br><br>
+                        <span class="txtx-0001">
+                            The best rent a car company in Pakistan for any purpose, very
+                            professional and they provide great services. Recently I have used them and will
+                            recommend
+                            to everyone..
+                        </span>
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        <img src="images/profile.jpg" width="120px" height="90px" alt="Picture">
+                        <br><span class="txt-001">Zulifqa Ali</span><br><br>
+                        <span class="txtx-0001">
+                            Excellent services. Punctual and fast. Experienced and well-behaved driver.They did
+                            quite good coordination with me before the event. Thumb up!
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </center>
+    </section>
+    <footer>
+        <div class="row1">
+            <div class="col">
+                <a href="index.html"><img src="logo.png" class="logo1"></a>
+            </div>
+            <div class="col hide margin hidelinks">
+                <h1>Quick Links
+                    <div class="underline"><span></span></div>
+                </h1>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="services.html">Services</a></p>
+                <p>
+                    <a href="tours.html">Tour</a>
+                </p>
+                <p>
+                    <a href="Fleet.html">Fleet</a>
+                </p>
+                <p>
+                    <a href="about us.html">About Us</a>
+                </p>
+                <p><a href="gallery.HTML">Gallery</a></p>
+                <p><a href="contact.html">Contact</a></p>
+                <p>
+                    <a href="feedback-form.html">Feedback</a>
+                </p>
+            </div>
+            <div class="col hide">
+                <h1>Social Media
+                    <div class="underline"><span></span></div>
+                </h1>
+                <p class="one"><a href="https://www.facebook.com/"><i
+                            class="fab fa-facebook-square"></i><span class="hide hidelabel">Facebook</span></a>
+                </p>
+                <p class="one">
+                    <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i><span class="hide hidelabel">Twitter</span></a>
+                </p>
+                <p class="one">
+                    <a href="https://www.instagram.com/">
+                        <i class="fab fa-instagram-square"></i><span class="hide hidelabel">Instagram</span></a>
+                </p>
+                <p class="one"><a href="https://www.linkedin.com/"><i
+                            class="fab fa-linkedin"></i><span class="hide hidelabel">Linkedin</span></a></p>
+            </div>
+            <div class="col space margin">
+                <h1>Newsletter
+                    <div class="underline"><span></span></div>
+                </h1>
+                <form>
+                    <i class=" far fa-envelope "></i>
+                    <input type="email" placeholder="Enter your email id " required>
+                    <button type="submit"><i class="fas fa-arrow-right "></i></button>
+                </form>
+				<div class="horizontal">
+				<p ><a href="https://www.facebook.com/"><i
+                            class="fab fa-facebook-square"></i></a>
+                </p>
+                <p >
+                    <a href="https://twitter.com/"><i class="fab fa-twitter-square"></i></a>
+                </p>
+                <p >
+                    <a href="https://www.instagram.com/">
+                        <i class="fab fa-instagram-square"></i></a>
+                </p>
+                <p ><a href="https://www.linkedin.com/"><i
+                            class="fab fa-linkedin"></i></a>
+				</p>
+            	</div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright ">Copyright <i class="far fa-copyright "></i> 2022 - All Rights Reserved</p>
+    </footer>
+    <script src="sticky.js"></script>
+
+</body>
+
+</html>
